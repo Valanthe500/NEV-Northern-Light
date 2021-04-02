@@ -7,7 +7,7 @@
 	var/log = 0
 	var/sound
 	var/newscast = 0
-	var/channel_name = "Station Announcements"
+	var/channel_name = "Ship Announcements"
 	var/announcement_type = "Announcement"
 
 /datum/announcement/New(var/do_log = 0, var/new_sound = null, var/do_newscast = 0)
@@ -101,6 +101,9 @@ datum/announcement/proc/Log(message as text, message_title as text)
 /proc/GetNameAndAssignmentFromId(var/obj/item/weapon/card/id/I)
 	// Format currently matches that of newscaster feeds: Registered Name (Assigned Rank)
 	return I.assignment ? "[I.registered_name] ([I.assignment])" : I.registered_name
+
+/proc/level_six_announcement()
+	command_announcement.Announce("Confirmed outbreak of level 6 biohazard aboard [station_name()]. All personnel must contain the outbreak.", "Biohazard Alert", new_sound = 'sound/AI/outbreak7.ogg')
 
 /proc/level_seven_announcement()
 	command_announcement.Announce("Confirmed outbreak of level 7 biohazard aboard [station_name()]. All personnel must contain the outbreak.", "Biohazard Alert", new_sound = 'sound/AI/outbreak7.ogg')

@@ -131,7 +131,7 @@
 		if(CHOICE_TCONTRACT)
 			var/datum/antag_contract/A = pick(GLOB.various_antag_contracts)
 			desc += " You feel like you remembered something important."
-			holder.mind.store_memory("Thanks to your connections, you were tipped off about some suspicious individuals on the station. In particular, you were told that they have a contract: " + A.name + ": " + A.desc)
+			holder.mind.store_memory("Thanks to your connections, you were tipped off about some suspicious individuals on the ship. In particular, you were told that they have a contract: " + A.name + ": " + A.desc)
 		if(CHOICE_STASHPAPER)
 			desc += " You have a special note in your storage."
 			stash.spawn_stash()
@@ -233,4 +233,19 @@
 /datum/perk/job/club/remove()
 	if(holder)
 		holder.sanity_damage += 2
+	..()
+
+/datum/perk/boff
+	name = "Nerves of Plasteel"
+	desc = "You've seen it all, and nothing surprises you. The horrors of this vessel seem to affect you less than everyone around you."
+	icon_state = "vagabond" // https://game-icons.net/1x1/lorc/eye-shield.html
+
+/datum/perk/boff/assign(mob/living/carbon/human/H)
+	..()
+	if(holder)
+		holder.sanity.view_damage_threshold += 20
+
+/datum/perk/boff/remove()
+	if(holder)
+		holder.sanity.view_damage_threshold -= 20
 	..()

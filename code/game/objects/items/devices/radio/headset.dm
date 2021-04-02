@@ -53,7 +53,7 @@
 
 	return ..()
 
-/*
+
 /obj/item/device/radio/headset/receive_range(freq, level, aiOverride = 0)
 	if (aiOverride)
 		playsound(loc, 'sound/effects/radio_common.ogg', 25, 1, 1)
@@ -64,7 +64,7 @@
 			playsound(loc, 'sound/effects/radio_common.ogg', 25, 1, 1)
 			return ..(freq, level)
 	return -1
-*/		//Removed - squelch sounds.
+		//Removed - squelch sounds.
 
 /obj/item/device/radio/headset/syndicate
 	origin_tech = list(TECH_COVERT = 3)
@@ -125,6 +125,13 @@
 /obj/item/device/radio/headset/heads/captain
 	name = "captain's headset"
 	desc = "The headset of the boss."
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks2type = /obj/item/device/encryptionkey/heads/captain
+
+/obj/item/device/radio/headset/heads/boff
+	name = "bridge officer's headset"
+	desc = "The headset of the boss's assistant."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/heads/captain
@@ -202,7 +209,9 @@
 
 /obj/item/device/radio/headset/headset_service
 	name = "service radio headset"
-	desc = "Headset used by the service staff, tasked with keeping the ship full, happy and clean."
+
+	desc = "Headset used by the service staff, tasked with keeping the ship full and happy."
+
 	icon_state = "srv_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/headset_service
