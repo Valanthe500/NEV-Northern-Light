@@ -9830,6 +9830,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/structure/closet/mopcloset,
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/eris/medical/medbreak)
 "axA" = (
@@ -24867,6 +24868,7 @@
 /area/eris/command/mbo)
 "bhO" = (
 /obj/structure/closet/secure_closet/reinforced/CMO,
+/obj/item/storage/box/catcubes,
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/eris/command/mbo)
 "bhP" = (
@@ -26495,9 +26497,7 @@
 /turf/simulated/floor/tiled/dark/cargo,
 /area/eris/security/main)
 "blD" = (
-/obj/structure/mopbucket,
-/obj/item/reagent_containers/glass/bucket,
-/obj/item/mop,
+/obj/structure/closet/mopcloset,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/eris/security/main)
 "blE" = (
@@ -29110,7 +29110,6 @@
 "brl" = (
 /obj/structure/closet/secure_closet/reinforced/RD,
 /obj/item/bluespace_harpoon,
-/obj/item/storage/box/catcubes,
 /turf/simulated/floor/carpet/purcarpet,
 /area/eris/command/meo)
 "brm" = (
@@ -31291,6 +31290,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
+/obj/structure/closet/mopcloset,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/eris/crew_quarters/fitness)
 "bwK" = (
@@ -38080,6 +38080,7 @@
 /turf/simulated/floor/tiled/dark/cargo,
 /area/eris/security/prison)
 "bML" = (
+/obj/structure/closet/mopcloset,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/eris/security/prison)
 "bMM" = (
@@ -53022,9 +53023,7 @@
 /turf/simulated/floor/tiled/dark/panels,
 /area/eris/neotheology/bioreactor)
 "cwy" = (
-/obj/structure/mopbucket,
-/obj/item/mop,
-/obj/item/reagent_containers/glass/bucket,
+/obj/structure/closet/mopcloset,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/eris/neotheology/bioreactor)
 "cwz" = (
@@ -65594,6 +65593,7 @@
 	dir = 4
 	},
 /obj/structure/catwalk,
+/obj/structure/closet/mopcloset,
 /turf/simulated/floor/plating/under,
 /area/eris/rnd/lab)
 "dbp" = (
@@ -67957,6 +67957,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/structure/closet/mopcloset,
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/eris/quartermaster/disposaldrop)
 "dhy" = (
@@ -81051,6 +81052,10 @@
 	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/eris/command/bridge)
+"qUn" = (
+/obj/structure/closet/mopcloset,
+/turf/simulated/floor/tiled/steel/bar_light,
+/area/eris/crew_quarters/bar)
 "qVN" = (
 /obj/machinery/door/firedoor,
 /obj/effect/window_lwall_spawn/smartspawnplasma,
@@ -81118,6 +81123,10 @@
 /obj/spawner/mob/roaches/cluster/low_chance,
 /turf/simulated/floor/plating/under,
 /area/eris/maintenance/section3deck4starboard)
+"rDu" = (
+/obj/structure/closet/mopcloset,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/eris/hallway/main/section2)
 "rFK" = (
 /obj/machinery/telecomms/server/presets/common,
 /turf/simulated/floor/bluegrid,
@@ -81408,6 +81417,10 @@
 /obj/structure/closet/secure_closet/brig{
 	id = "Eng 1"
 	},
+/turf/simulated/floor/reinforced,
+/area/eris/engineering/breakroom)
+"uda" = (
+/obj/structure/closet/mopcloset,
 /turf/simulated/floor/reinforced,
 /area/eris/engineering/breakroom)
 "uee" = (
@@ -116186,7 +116199,7 @@ btS
 but
 bui
 bui
-bui
+uda
 brO
 bud
 brO
@@ -139545,7 +139558,7 @@ dtm
 bmS
 aaM
 aJG
-aKo
+rDu
 xwl
 aaM
 aLR
@@ -164763,7 +164776,7 @@ aAZ
 doH
 dDO
 bhU
-aqi
+qUn
 aaC
 box
 bpM
