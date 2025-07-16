@@ -69,7 +69,9 @@ GLOBAL_LIST_EMPTY(storyteller_cache)
 	var/use_cortical_stacks = 0			//enables neural lace
 	var/empty_server_restart_time = 0	// Time in minutes before empty server will restart
 
-	var/character_slots = 10				// The number of available character slots
+//Eclipse Edit Begins - increase character slots from 10 to 30. idk if even I would use 30 but better to have more than less~ -Timidvi/BriCheese
+	var/character_slots = 30				// The number of available character slots
+//Eclipse Edit Ends - increase character slots to 30 from 10.
 	var/loadout_slots = 3					// The number of loadout slots per character
 
 	var/max_gear_cost = 10 // Used in chargen for accessory loadout limit. 0 disables loadout, negative allows infinite points.

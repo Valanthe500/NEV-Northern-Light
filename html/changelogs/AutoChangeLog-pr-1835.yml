@@ -1,0 +1,6 @@
+author: timidvi
+delete-after: true
+changes:
+  - tweak: changed character slots from 10 to 30.
+  - code_imp: changed code in code/controllers/configuration.dm
+  - config: changed var/character_slots = 10 --> var/character_slots = 30
